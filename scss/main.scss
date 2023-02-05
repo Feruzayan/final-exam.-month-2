@@ -1,0 +1,630 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+.home{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+        header{
+            background: #FFFFFF;
+            position: fixed;
+            z-index:999;
+            width: 100%;
+            height: 96px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                ul{
+                    margin-left: 58px;
+                    margin-right: 511px;
+                    list-style: none;
+                    display: flex;
+                    gap: 32px;
+                        li{
+                            cursor: pointer;
+                            a{
+                                font-family: 'Space Mono';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 15px;
+                                line-height: 25px;
+                                color: #939CAA;
+                                text-decoration: none;
+                            }
+                        }
+                }
+                button{
+                    padding: 14px 39px;
+                    background: #FCB72B;
+                    font-family: 'Space Mono';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 25px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    border: none;
+                    cursor: pointer;
+                }
+                li :hover{
+                    color: #3a4c68;
+                    transition: all 0.4s;
+                }
+                button:hover{
+                    background:#f3d18e;
+                    transition: all 0.5s;
+                }
+        }
+        section{
+            width: 1345px;
+            margin: 0 auto;
+            background-image: url(../images/Bitmap.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            padding: 153px 0 0;
+                h1{
+                    width: 400px;
+                    margin-left: 165px;
+                    font-family: 'Space Mono';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 56px;
+                    line-height: 56px;
+                    letter-spacing: -2.5px;
+                    color: #FFFFFF;
+                }
+                p{
+                    width: 350px;
+                    height: 100px;
+                    margin-top: 40px;
+                    font-family: 'Lexend Deca';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 25px;
+                    color: #FFFFFF;
+                }
+                    .section__arrow{
+                        display: flex;
+                        align-items: center;
+                        gap: 50px;
+                            .img1{
+                                margin-top: 15px;
+                            }
+                            .img2{
+                                margin-top: 150px;
+                            }
+                    }
+                button{
+                    padding: 14px 39px;
+                    margin-left: 260px;
+                    margin-top: 40px;
+                    margin-bottom: 152px;
+                    background: #FCB72B;
+                    border: none;
+                    font-family: 'Space Mono';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 25px;
+                    text-align: center;
+                    color: #FFFFFF;
+                    cursor: pointer;
+                }
+                button:hover{
+                    background: #f3d18e;
+                    transition: all 0.4px;
+                }
+        }
+        aside{
+            width: 1345px;
+            margin: 160px auto 0 auto;
+            .aside__path{
+                position: relative;
+                .img1{
+                    position: absolute;
+                    bottom: 45px;
+                }
+                .path__pic{
+                    display: flex;
+                    gap: 260px;
+                    margin-left: 165px;
+                }
+            }
+            .aside__text{
+                display: flex;
+                align-items: center;
+                margin-left: 165px;
+                gap: 30px;
+                .text__card{
+                    h2{
+                        margin-top: 40px;
+                        font-family: 'Space Mono';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 28px;
+                        letter-spacing: -1.07143px;
+                        color: #495567;
+                    }
+                    p{
+                        margin-top: 27px;
+                        width: 280px;
+                        font-family: 'Lexend Deca';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: #939CAA;
+                    }
+                }
+            }
+            .aside__easy{
+                margin-top: 147px;
+                display: flex;
+                gap: 89px;
+                justify-content: flex-end;
+                    .easy__text{
+                        h1{
+                            font-family: 'Space Mono';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 48px;
+                            line-height: 48px;
+                            letter-spacing: -2.14286px;
+                            color: #495567;
+                        }
+                        p{
+                            margin-top: 24px;
+                            margin-bottom: 40px;
+                            font-family: 'Lexend Deca';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 25px;
+                            color: #939CAA;
+                        }
+                        button{
+                            padding: 14px 44px;
+                            background: #FCB72B;
+                            border: none;
+                            font-family: 'Space Mono';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 15px;
+                            line-height: 25px;
+                            text-align: center;
+                            color: #FFFFFF;
+                            cursor: pointer;
+                        }
+                        button:hover{
+                            background: #f3d18e;
+                            transition: all 0.4px;
+                        }
+                    }
+            }
+            .aside__coming{
+                margin-top: 155px;
+                display: flex;
+                gap: 220px;
+                justify-content: flex-start;
+                .coming__text{
+                    h1{
+                        font-family: 'Space Mono';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 48px;
+                        line-height: 48px;
+                        letter-spacing: -2.14286px;
+                        color: #495567;
+                    }
+                    p{
+                        margin-top: 24px;
+                        margin-bottom: 40px;
+                        font-family: 'Lexend Deca';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 25px;
+                        color: #939CAA;
+                    }
+                    button{
+                        padding: 14px 44px;
+                        background: #FCB72B;
+                        border: none;
+                        font-family: 'Space Mono';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 15px;
+                        line-height: 25px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        cursor: pointer;
+                    }
+                    button:hover{
+                        background: #f3d18e;
+                        transition: all 0.4px;
+                    }
+                }
+            }
+            .aside__zero{
+                margin-top: 147px;
+                display: flex;
+                gap: 200px;
+                justify-content: flex-end;
+                    .zero__text{
+                        h1{
+                            font-family: 'Space Mono';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 48px;
+                            line-height: 48px;
+                            letter-spacing: -2.14286px;
+                            color: #495567;
+                        }
+                        p{
+                            margin-top: 24px;
+                            margin-bottom: 40px;
+                            font-family: 'Lexend Deca';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 25px;
+                            color: #939CAA;
+                        }
+                        button{
+                            padding: 14px 44px;
+                            background: #FCB72B;
+                            border: none;
+                            font-family: 'Space Mono';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 15px;
+                            line-height: 25px;
+                            text-align: center;
+                            color: #FFFFFF;
+                            cursor: pointer;
+                        }
+                        button:hover{
+                            background: #f3d18e;
+                            transition: all 0.4px;
+                        }
+                    }
+            }
+        }
+        summary{
+            background-image: url(../images/sign\ up.png);
+            background: #495567;
+            width: 1345px;
+            height: 300px;
+            margin: 310px auto 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 336px;
+                h1{
+                    font-family: 'Space Mono';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 48px;
+                    letter-spacing: 3px;
+                    color: #FFFFFF;
+                }
+                .summary__img{
+                    display: flex;
+                    gap: 18px;
+                }
+        }
+        footer{
+            width: 1345px;
+            height: 96px;
+            background: #333A44;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                ul{
+                    display: flex;
+                    gap: 32px;
+                    align-items: center;
+                    margin-left: 58px;
+                    margin-right: 571px;
+                    list-style: none;
+                    li{
+                        a{
+                            text-decoration: none;
+                            font-family: 'Space Mono';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 15px;
+                            line-height: 25px;
+                            color: #939CAA;
+                        }
+                    }
+                    li :hover{
+                        color: #eff1f5;
+                        transition: all 0.4s;
+                    }
+                }
+                .footer__media{
+                    display: flex;
+                    gap: 25px;
+                }
+        }
+}
+
+@media (max-width: 447px){
+}
+
+
+// new page: about
+.about{
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+        header{
+        background: #FFFFFF;
+        position: fixed;
+        z-index:999;
+        top: 0;
+        width: 100%;
+        height: 96px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            ul{
+                margin-left: 58px;
+                margin-right: 511px;
+                list-style: none;
+                display: flex;
+                gap: 32px;
+                    li{
+                        cursor: pointer;
+                        a{
+                            font-family: 'Space Mono';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 15px;
+                            line-height: 25px;
+                            color: #939CAA;
+                            text-decoration: none;
+                        }
+                    }
+            }
+            button{
+                padding: 14px 39px;
+                background: #FCB72B;
+                font-family: 'Space Mono';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 25px;
+                text-align: center;
+                color: #FFFFFF;
+                border: none;
+                cursor: pointer;
+            }
+            li :hover{
+                color: #3a4c68;
+                transition: all 0.4s;
+            }
+            button:hover{
+                background:#f3d18e;
+                transition: all 0.5s;
+            }
+        }
+        section{
+            width: 1345px;
+            height: 300px;
+            margin: auto;
+            padding-top: 100px;
+            background-image: url(../images/About.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+                img{
+                    position: absolute;
+                    right: 0;
+                    top: 55%;
+                }
+                h1{
+                    font-family: 'Space Mono';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 56px;
+                    line-height: 56px;
+                    letter-spacing: -2.5px;
+                    color: #FFFFFF;
+                    padding: 72px 165px;
+                }
+
+        }
+        aside{
+            width: 1345px;
+            margin: 150px auto 0;
+                .aside__card1{
+                    display: flex;
+                    gap: 92px;
+                    justify-content: flex-end;
+                    align-items: center;
+                    .aside__text{
+                        h1{
+                            font-family: 'Space Mono';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 48px;
+                            line-height: 48px;
+                            letter-spacing: -2.14286px;
+                            color: #495567;
+                        }
+                        p{
+                            margin-top: 24px;
+                            font-family: 'Lexend Deca';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 25px;
+                            color: #939CAA;
+                        }
+                    }
+                }
+                .aside__card2{
+                    margin-top: 77px;
+                    display: flex;
+                    gap: 250px;
+                    justify-content: flex-start;
+                    align-items: center;
+                    .aside__text{
+                        h1{
+                            font-family: 'Space Mono';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 48px;
+                            line-height: 48px;
+                            letter-spacing: -2.14286px;
+                            color: #495567;
+                        }
+                        p{
+                            margin-top: 24px;
+                            font-family: 'Lexend Deca';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 25px;
+                            color: #939CAA;
+                        }
+                    }
+                }
+                .aside__card3{
+                    margin-top: 90px;
+                    h1{
+                        margin-bottom: 40px;
+                        font-family: 'Space Mono';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 48px;
+                        line-height: 48px;
+                        text-align: center;
+                        letter-spacing: -2.14286px;
+                        color: #495567;
+                    }
+                        .card3__all{
+                            display: flex;
+                            gap: 150px;
+                            justify-content: center;
+                            align-items: center;
+                                .card3__1{
+                                    width: 300px;
+                                    display: flex;
+                                    flex-wrap: wrap;
+                                    justify-content: center;
+                                    h1{          
+                                        margin-top: 32px;                              
+                                        font-family: 'Space Mono';
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        font-size: 24px;
+                                        line-height: 28px;
+                                        text-align: center;
+                                        letter-spacing: -1.07143px;
+                                        color: #495567;
+                                    }
+                                    p{
+                                        width: 300px;
+                                        font-family: 'Lexend Deca';
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        font-size: 15px;
+                                        line-height: 25px;
+                                        text-align: center;
+                                        color: #939CAA;
+                                    }
+                                }
+                        }
+                }
+                .aside__card4{
+                    h1{
+                        margin-top: 120px;
+                        margin-bottom: 64px;
+                        font-family: 'Space Mono';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 48px;
+                        line-height: 48px;
+                        text-align: center;
+                        letter-spacing: -2.14286px;
+                        color: #495567;
+                    }
+                    .accordion-button.collapsed {
+                        color: #495567;
+                        background: #F2F5F9;
+                    }
+                }
+        }
+        summary{
+            background-image: url(../images/sign\ up.png);
+            background: #495567;
+            width: 1345px;
+            height: 300px;
+            margin: 310px auto 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 336px;
+                h1{
+                    font-family: 'Space Mono';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 48px;
+                    line-height: 48px;
+                    letter-spacing: 3px;
+                    color: #FFFFFF;
+                }
+                .summary__img{
+                    display: flex;
+                    gap: 18px;
+                }
+        }
+        footer{
+            width: 1345px;
+            height: 96px;
+            background: #333A44;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+                ul{
+                    display: flex;
+                    gap: 32px;
+                    align-items: center;
+                    margin-left: 58px;
+                    margin-right: 571px;
+                    list-style: none;
+                    li{
+                        a{
+                            text-decoration: none;
+                            font-family: 'Space Mono';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 15px;
+                            line-height: 25px;
+                            color: #939CAA;
+                        }
+                    }
+                    li :hover{
+                        color: #eff1f5;
+                        transition: all 0.4s;
+                    }
+                }
+                .footer__media{
+                    display: flex;
+                    gap: 25px;
+                }
+        }
+}
